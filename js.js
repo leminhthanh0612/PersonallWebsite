@@ -88,12 +88,16 @@ function showday()
 
 $(function () {
     var vid = document.getElementById("bgvid");
-    var pauseButton = document.querySelector("#polina button");
+    //var pauseButton = document.querySelector("#polina button");
+
+    var pause = $('.pause');
+    var play = $('.play');
 
     if (window.matchMedia('(prefers-reduced-motion)').matches) {
         vid.removeAttribute("autoplay");
         vid.pause();
-        pauseButton.innerHTML = "Paused";
+       // pauseButton.innerHTML = "Paused";
+        play.hide();
     }
 
     function vidFade() {
@@ -108,16 +112,30 @@ $(function () {
     });
 
 
-    pauseButton.addEventListener("click", function () {
+    //pauseButton.addEventListener("click", function () {
+    //    vid.classList.toggle("stopfade");
+    //    if (vid.paused) {
+    //        vid.play();
+    //        pauseButton.innerHTML = "Pause";
+    //    } else {
+    //        vid.pause();
+    //        pauseButton.innerHTML = "Paused";
+    //    }
+    //})
+
+    $('.play-pause').on('click', function () {
         vid.classList.toggle("stopfade");
         if (vid.paused) {
             vid.play();
-            pauseButton.innerHTML = "Pause";
+            play.hide();
+            pause.show();
         } else {
             vid.pause();
-            pauseButton.innerHTML = "Paused";
+            play.show();
+            pause.hide();
         }
-    })
+    });
+
 });
 
 

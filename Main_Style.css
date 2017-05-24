@@ -281,6 +281,34 @@ video {
 #polina button:hover { 
    background: rgba(0,0,0,0.5);
 }
+
+/*Play pause button*/
+.play-pause{
+    position:absolute;
+    right:0;
+}
+
+.play-pause-border{
+    border-radius: 50%;
+    display: initial;
+    border: 1px solid;
+    padding:8px;
+    background: rgba(255,255,255,0.23);
+    transition: .3s background;
+}
+.play-pause-border:hover{
+    background: rgba(0,0,0,0.5);
+}
+.play-pause-border i{
+    margin-left: 3px;
+}
+.btn-play i{
+    margin-left: 2px;
+}
+.play{
+    display:none;
+}
+
  /*use for menu*/
     /*.navbar .navbar-nav {
         display: inline-block;
