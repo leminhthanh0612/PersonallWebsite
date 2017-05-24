@@ -229,6 +229,57 @@
     top: 50%;
 }
 
+#mySidenav{
+    position:fixed;
+    right:0;
+    z-index:10;
+}
+
+/*Menu right*/
+#mySidenav a {
+    position: absolute;
+    right: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    z-index:10;
+    opacity:0.5;
+}
+
+#mySidenav a:hover {
+    right: 0;
+    opacity:1;
+}
+
+#about {
+    top: 40px;
+    background-color: #4CAF50;
+}
+
+#blog {
+    top: 100px;
+    background-color: #2196F3;
+}
+
+#projects {
+    top: 160px;
+    background-color: #f44336;
+}
+
+#contact {
+    top: 220px;
+    background-color: #555
+}
+
+
+.current-session{
+    opacity:1 !important;
+}
+
 /*Video Section*/
 .main-video{
       position: relative;
@@ -309,17 +360,14 @@ video {
     display:none;
 }
 
- /*use for menu*/
-    /*.navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
-
-    .navbar .navbar-collapse {
-        text-align: center;
-    }*/
-
+ /*Section green*/
+ .green-natural{
+     height:100vh;
+     background-image: url(images/green_leaves.png);
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-color:beige;
+ }
 
 /*Standard check break point*/
 

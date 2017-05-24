@@ -41,10 +41,10 @@
                                     <img alt="main page" src="images/main-icon.png" class="img-responsive" />
                                 </a>
                             </li>
-                            <li class="active"><a href="#">Trang Chính <span class="sr-only">(current)</span></a></li>
+                            <li class="active"><a href="#main-video">Trang Chính <span class="sr-only">(current)</span></a></li>
                             <li class="item-diviver">
                             </li>
-                            <li><a href="#">Hình Ảnh</a></li>
+                            <li><a href="#albums">Hình Ảnh</a></li>
                             <li class="item-diviver">
                             </li>
                             <li><a href="http://www.truongoanh.zxq.net">Sưu Tầm</a></li>
@@ -68,11 +68,19 @@
                 </div><!-- /.container-fluid -->
             </nav>
         </div>
+
+        <!--Secon right menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="#main-video" id="about">Trang chính</a>
+            <a href="#albums" id="blog">Hình ảnh</a>
+            <a href="#" id="projects">Sưu tầm</a>
+            <a href="#" id="contact">Trang khác</a>
+        </div>
     </header>
 
 <div id="container-fluid">
 	<article>
-        <section class="main-video">
+        <section class="main-video" id="main-video">
             <div class="">
                 <video poster="images/cover_img.jpg" id="bgvid" playsinline=playsinline autoplay=autoplay loop=loop>
                     <!--muted=muted-->
@@ -100,6 +108,9 @@
 
             </div>
             
+        </section>
+        <section class="green-natural" id="albums">
+
         </section>
     </article>
 </div>
