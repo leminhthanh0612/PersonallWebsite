@@ -363,9 +363,9 @@ video {
  /*Section green*/
  .green-natural{
      height:100vh;
-     background-image: url(images/green_leaves.png);
-     background-repeat:no-repeat;
-     background-size:cover;
+     background-image: url(images/green_leaves.png), url(images/bg-sec2.jpg);
+     background-repeat:no-repeat, no-repeat;
+     background-size:cover, cover;
      background-color:beige;
  }
 
