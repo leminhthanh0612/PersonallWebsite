@@ -255,14 +255,16 @@
     opacity:1;
 }
 
-#about {
+#main-page {
     top: 40px;
-    background-color: #4CAF50;
+    
+    background-color: #555
 }
 
 #blog {
     top: 100px;
-    background-color: #2196F3;
+    background-color: #4CAF50;
+    
 }
 
 #horoscope {
@@ -272,7 +274,7 @@
 
 #contact {
     top: 220px;
-    background-color: #555
+    background-color: #2196F3;
 }
 
 
@@ -372,7 +374,7 @@ video {
  /*Section Stars*/
 .stars{
      height:100vh;
-     background-image: url(images/bg-sec3.jpg);
+     background-image: url(images/bg-sec-3_3.jpg);
      background-repeat:no-repeat;
      background-size:cover;
      background-color:beige;
@@ -465,6 +467,14 @@ video {
     top:5%;
     width:8%;
 }
+
+ /*Section blue flower*/
+ .blue-flower{
+     height:100vh;
+     background-image: url(images/blue_flowers.jpg);
+     background-repeat:no-repeat;
+     background-size:cover;
+ }
 
 /*Standard check break point*/
 
