@@ -132,6 +132,26 @@
     src: url(fonts/BeaufortforLOL-Regular.woff);
 }
 
+@font-face{
+    font-family: RobotoRegular;
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: RobotoBold;
+    src: url(fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face{
+    font-family: RobotoLight;
+    src: url(fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face{
+    font-family: RobotoMedium;
+    src: url(fonts/Roboto/Roboto-Medium.ttf);
+}
+
 /*Menu*/
 
 .main-menu{
@@ -475,6 +495,61 @@ video {
      background-repeat:no-repeat;
      background-size:cover;
  }
+
+ .about-container{
+     display:flex;
+     height:100%;
+ }
+
+ .about-me{
+     font-family:RobotoRegular;
+     margin:auto;
+  }
+
+  .about-border{
+      background-color:rgba(38,132,194,0.2);
+  }
+
+ .about-me h1{
+     font-family:RobotoBold;
+     text-transform:uppercase;
+ }
+
+
+#infinity {
+    position: relative;
+    width: 165px;
+    height: 120px;
+}
+
+    #infinity:before, #infinity:after {
+        content: "";
+        position: absolute;
+        top:22px;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        border: 20px solid red;
+        -moz-border-radius: 50px 50px 0 50px;
+        border-radius: 50px 50px 0 50px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    #infinity:after {
+        left: auto;
+        right: 0;
+        -moz-border-radius: 50px 50px 50px 0;
+        border-radius: 50px 50px 50px 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
 
 /*Standard check break point*/
 
