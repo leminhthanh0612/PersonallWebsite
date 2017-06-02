@@ -206,6 +206,10 @@ $(function () {
     //    rotate();
     //});
 
+    //Text typing
+    new TypingText(document.getElementById("polina"));
+    TypingText.runAll();
+
 });
 
 
