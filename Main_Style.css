@@ -338,6 +338,10 @@ video {
   font-size: 1.2rem;*/
 }
 
+#polina h1{
+    text-transform:uppercase;
+}
+
 #polina button { 
   display: block;
   width: 80%;
@@ -508,6 +512,7 @@ video {
 
   .about-border{
       background-color:rgba(38,132,194,0.2);
+      padding:10px;
   }
 
  .about-me h1{

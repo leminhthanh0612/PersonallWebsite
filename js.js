@@ -207,7 +207,7 @@ $(function () {
     //});
 
     //Text typing
-    new TypingText(document.getElementById("polina"));
+    new TypingText(document.getElementById("polina",1000));
     TypingText.runAll();
 
 });
