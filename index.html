@@ -16,7 +16,7 @@
 <link href="Main_Style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="show();showtime();showday()">
+<body onload="">
 
     <header>
         <div class="main-menu">
@@ -82,8 +82,8 @@
 <div id="container-fluid">
 	<article>
         <section class="main-video" id="main-video">
-            <div class="">
-                <video poster="images/cover_img.jpg" id="bgvid" playsinline=playsinline autoplay=autoplay loop=loop>
+            <div class="container-video">
+                <video poster="images/cover_img.jpg" id="bgvid" playsinline=playsinline autoplay=autoplay loop=loop muted>
                     <!--muted=muted-->
                     <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
                     <source src="video/challenger.mp4" type="video/mp4" />
@@ -97,14 +97,27 @@
                     <h4>
                         You Either Fight Or Run Forever
                     </h4>
+                    <br />
+                    <h4 style="">
+                        Thế giới này như
+                    </h4>
+                    <h3 style="color:#42f468">Một khu rừng</h3>
+                    <h4>
+                        bạn có thể chọn chiến đấu hoặc chạy mãi mãi!
+                    </h4>
                     <!--<button>Pause</button>-->
                 </div>
 
-
-                <div class="play-pause">
+                <!--<div class="play-pause">
                     <div class="pause"><span> Pause &nbsp;</span><div class="play-pause-border btn-play"><i class="glyphicon glyphicon-pause"></i></div></div>
-                    <div class="play"><span >Play &nbsp;</span><div class="play-pause-border "><i class="glyphicon   glyphicon-play"></i></div></div>
+                    <div class="play"><span>Play &nbsp;</span><div class="play-pause-border "><i class="glyphicon   glyphicon-play"></i></div></div>
+                </div>-->
+
+                <div class="mute-unmute">
+                    <div class="mute"><span> Mute &nbsp;</span><div class="play-mute-border btn-play"><i class="glyphicon glyphicon-volume-off"></i></div></div>
+                    <div class="unmute"><span>Unmute &nbsp;</span><div class="play-mute-border "><i class="glyphicon   glyphicon-volume-up"></i></div></div>
                 </div>
+                
 
             </div>
             
