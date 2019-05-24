@@ -64,6 +64,11 @@ hr {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+.audio-mp3{
+    width:25%;
+    opacity:0.5
+}
+
 #demo {
     font-weight:bold;
 }
