@@ -24,7 +24,7 @@ Functions defined:
 */
 
 TypingText = function(element, interval, cursor, finishedCallback) {
-    if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+    if((typeof document.getElementById === "undefined") || (typeof element.innerHTML === "undefined")) {
         this.running = true;	// Never run.
         return;
     }
